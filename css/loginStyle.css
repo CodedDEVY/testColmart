@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'satoshi';
+    src: url(../asset/fonts/satoshi.ttf);
+  }
+
+@font-face {
+    font-family: 'satmed';
+    src: url(../asset/fonts/Satoshi-Medium.ttf);
+}
+
+body{
+    background-color: white;
+    font-family: montserrat;
+    font-weight: 550;
+    color: #011933;
+}
+
+.hdr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4em;
+    height: 4em;
+    /* background-color: red; */
+    box-shadow: 5px 5px 5px #bfd8f4;
+}
+
+.hdr .logoDiv{
+    display: flex;
+    align-items: center;
+    gap: 4.5em;
+    width: 30%;
+    /* background-color: green; */
+}
+
+/* .hdr .logoDiv img{
+    width: 50px;
+    height: 50px;
+} */
+
+.hdr .logoDiv .AcctBal{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hdr .logoDiv .percentFig{
+    color: #19A003;
+    font-size: 14px;
+}
+
+.hdr .menu{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    /* background-color: yellow; */
+    padding-left: 3em;
+}
+
+.hdr .menu .menuFeat{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.hdr .menu .menuFeat a{
+    text-decoration: none;
+    color: black;
+}
+
+.hdr .menu .menuFeat .p2p{
+    background-color: #5799E31F;
+    padding: .3em .6em;
+    border: 1px solid #0F5D8F;
+    border-radius: 50px;
+}
+
+.hdr .menu .menuFeat .p2p:hover{
+    background-color: #19559a1f;
+}
+
+.hdr .menu .menuFeat .bam{
+    background-color: #5799E31F;
+    padding: .3em .6em;
+    /* border: 1px solid #0F5D8F; */
+    border-radius: 50px;
+}
+
+.hdr .menu .menuFeat .bam:hover{
+    background-color: #19559a1f;
+}
+
+/* .hdr .menu .menuFeat img{
+    width: 20px;
+    cursor: pointer;
+} */
+
+/* body */
+.bdy{
+    width: 100%;
+    display: flex;
+}
+
+.bdy .sd01{
+    width: 30%;
+    min-height: 42em;
+    background-color: #011933;
+    position: relative;
+    overflow: hidden;
+}
+
+.bdy .sd01 .imgTop{
+    width: 310px;
+    position: absolute;
+    bottom: 29.4em;
+    left: 13em;
+    /* background-color: #19A003; */
+}
+
+.bdy .sd01 .imgBttm{
+    width: 310px;
+    position: absolute;
+    top: 27em;
+    right: 16em;
+    /* background-color: #19A003; */
+}
+
+.bdy .sd02{
+    width: 70%;
+    min-height: 42em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.bdy .sd02 .contr{
+    width: 55%;
+    /* background-color: antiquewhite; */
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bdy .sd02 .contr img{
+    width: 50px;
+    margin-bottom: 1em;
+}
+
+.bdy .sd02 .contr .so{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.bdy .sd02 .contr form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: .2em; */
+}
+
+.bdy .sd02 .contr form .email{
+    margin-bottom: 1.5em;
+}
+
+
+
+.bdy .sd02 .contr form .input p{
+    padding: .2em 1em;
+}
+
+.bdy .sd02 .contr form input{
+    width: 35em;
+    height: 3.3em;
+    border-radius: 50px;
+    border: 1px solid #0F5D8F;
+    padding-left: 1.2em;
+    /* font-weight: 550; */
+    font-size: 14px;
+}
+
+.bdy .sd02 .contr form input[type=checkbox]{
+    width: 1.3em;
+    background-color: #011933;
+}
+
+
+.bdy .sd02 .contr form input[type=submit]{
+    background-image: linear-gradient(#063b74, #011933);
+    background-color: #011933;
+    color: white;
+    cursor: pointer;
+    /* font-weight: 550; */
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 2.6em;
+}
+
+.bdy .sd02 .contr form .extFeat{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.8em;
+    /* background-color: yellow; */
+}
+
+.bdy .sd02 .contr form .extFeat .ext01{
+    display: flex;
+    align-items: center;
+    gap: .3em;
+    /* background-color: yellow; */
+}
+
+.bdy .sd02 .contr form .extFeat .ext01 a{
+    text-decoration: none;
+    color: #011933;
+}
+
+.bdy .sd02 .contr form .extFeat .ext01 a:hover{
+    text-decoration: underline;
+}
+
+.bdy .sd02 .contr .extLogin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.bdy .sd02 .contr .extLogin p{
+    width: 44%;
+    height: .1em;
+    background-color: #5799E3;
+}
+
+.bdy .sd02 .contr .socialLog{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    align-items: center;
+}
+
+.bdy .sd02 .contr .socialLog .soc01{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+
+.bdy .sd02 .contr .socialLog .soc01 img{
+    width: 40px;
+}
+
+.bdy .sd02 .contr .socialLog .soc01 a{
+    text-decoration: none;
+    /* font-weight: 670; */
+    font-size: 18px;
+    color: #011933;
+}
+
+.bdy .sd02 .contr .socialLog .soc01 a:hover{
+    text-decoration: underline;
+}
+
+
+
