@@ -478,6 +478,10 @@ border-radius: 4px;
     /*padding-bottom: 2.5em;*/
     background: rgba(87, 153, 227, 0.12);
 }
+	
+	.dispMob {
+		display: none;
+	}
 
 /* light bar */
 .offer .lightBar{
@@ -668,6 +672,7 @@ form .form01 .inp{
     padding: .3em 1em .3em 1.4em;
     border-radius: 50px;
     gap: .3em;
+	justify-content: space-between;
     /* background-color: #009BFF; */
 }
 
@@ -676,7 +681,7 @@ form .form01 p{
 }
 
 form .form01 .inp input{
-    width: 30em;
+    width: 80%;
     height: 2em;
     outline: none;
     border: 0;
@@ -1817,7 +1822,7 @@ dotlottie-player{
 /* screens */
 
 
-@media (max-width: 720px) {
+@media (max-width: 1086px) {
 	
 	body {
 		width: 100%;
@@ -1914,6 +1919,14 @@ dotlottie-player{
 		height: 100%;
 	}
 	
+	.dispWeb {
+		display: none;
+	}
+	
+	.dispMob {
+		display: flex;
+	}
+	
 	.offer .offerBody {
 		display: block;
 	}
@@ -1938,6 +1951,14 @@ dotlottie-player{
 	
 	.offer .lightBar .imgLight02 {
 		right: 0;
+	}
+	
+	form .form01 .inp input {
+		width: 80%;
+	}
+	
+	form .form01 .inpX .hideInpX {
+		width: 40%;
 	}
 	
 	
@@ -1977,9 +1998,19 @@ dotlottie-player{
 	.download .downloadContent {
 		gap: 1em;
 	}
+	
 	.download .downloadContent .dwldCont {
 		display: block; 
 		width: 100%;
+	}
+	
+	.download .downloadContent .dwldCont .dwldBttn a{
+		display: inline-block;
+		width: 45%;
+	}
+	
+	.download .downloadContent .dwldCont .dwldBttn a img{
+		width: 95%;
 	}
 	
 	.download .downloadContent .dwldCont .R1 {
