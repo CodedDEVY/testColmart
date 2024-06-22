@@ -1343,7 +1343,6 @@ form .form01 .inpBttn input:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-direction: column;
     gap: 4em;
     margin-bottom: 10em;
     background: linear-gradient(180deg, rgba(87, 153, 227, 0.035) -13.33%, rgba(87, 153, 227, 0.042) -13.32%, rgba(87, 153, 227, 0.07) 98.33%);
@@ -1469,7 +1468,6 @@ filter: blur(152px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-direction: column;
     gap: 4em;
 }
 
@@ -1490,10 +1488,12 @@ filter: blur(152px);
     display: flex;
     flex-direction: column;
     gap: 2em;
-    padding-top: 2.3em;
-    padding-right: 5em;
+    padding-top: 2em;
+    padding-left: 5em;
 	width: 60%;
+	text-align: center;
 }
+
 
 .download .downloadContent .dwldCont .R1 p{
     /*font-weight: 500;*/
@@ -1516,7 +1516,6 @@ filter: blur(152px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-direction: column;
     margin-bottom: 5em;
 	padding-top: 5em;
 }
@@ -1526,7 +1525,6 @@ filter: blur(152px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-direction: column;
     gap: 1.4em;
 }
 
@@ -1537,7 +1535,6 @@ filter: blur(152px);
 
 .getStarted .getScont h1 span{
     font-weight: 700;
-    font-size: 36px;
     text-transform: uppercase;
     color: #009BFF;
 }
@@ -1820,11 +1817,41 @@ dotlottie-player{
 /* screens */
 
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
+	
+	body {
+		width: 100%;
+	}
+	
+	.hdr {
+		display: none;
+	}
+	
+	.buyP2P {
+		display: none;
+	}
+	
+	.unlockSect {
+		display: none;
+	}
+	
+	.imgLight2 {
+		display: none;
+	}
+	
+	.chartBody {
+		display: none;
+	}
+	
+	.foot {
+		display: none;
+	}
+	
 	
 	
     .bodyCont{
         height: 100% ;
+		padding-bottom: 1em;
     }
 	
 	.bodyCont .highText{
@@ -1878,188 +1905,117 @@ dotlottie-player{
 	}
 
 	.liveChart .chartCon .chartTitle{
-		font-size: 12px;
+		font-size: 20px;
 		font-weight: 600;
+		padding-top: 1em;
 	}
 	
-	
-	
-	
-	
-	.offer .offerBody .L_Offer{
-		/* Auto layout */
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		padding-right: 5em;
-		/*gap: 17px;*/
-
-		/*position: absolute;*/
-		width: 55%;
-		/*height: 469px;*/
-		/*left: 106px;*/
-		/*top: calc(50% - 469px/2 + 29.5px);*/
-		margin-left: 5em;
+	.offer {
+		height: 100%;
 	}
-
-
-	.offer .offerBody .R_Offer{
-		width: 45%;
-		padding: 1em;
+	
+	.offer .offerBody {
+		display: block;
 	}
-
-	/*.offer .offerBody .L_Offer, .R_Offer{
-		width: 45%;
-		padding: 1em;
-	}*/
-
-	.offer .offerBody .L_Offer img{
-		margin-bottom: 1em;
+	
+	.offer .offerBody .L_Offer {
+		width: 100%;
+		padding: 10px;
+    	text-align: center;
+		margin-left: 0em;
+		align-items: center;
 	}
-
-	.offer .offerBody .L_Offer p{
-		line-height: 1.5em;
-		font-weight: 420;
+	
+	.offer .offerBody .R_Offer {
+		width: 100%
 	}
-
-	.offer .offerBody .R_Offer{
-		position: relative;
-		display: flex;
+	
+	.offer .offerBody form {
+		width: 100%;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	
+	.offer .lightBar .imgLight02 {
 		right: 0;
-		/* background-color: red; */
 	}
-
-	.offer .offerBody form{
-		/*position: absolute;*/
-		right: 0;
-		width: 80%;
-		/* min-height: 10em; */
-		background-color: white;
-		border-radius: 10px;
+	
+	
+	.hcwh {
+		gap: 2em;
+	}
+	
+	.hcwh .helpCont {
+		display: block;
+	}
+	
+	.hcwh .helpCont img {
+		width: 100%;
+	}
+	
+	.hcwh .r-help {
+		margin-bottom: 3em;
+	}
+	
+	.hcwh .lightBar {
+		height: 100em;
+	}
+	
+	.whyUse {
 		padding: 2em;
-		color: #011933;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 2em;
-	}
-
-	form .slide1{
-		display: flex;
-		gap: .7em;
-		padding: .4em .5em;
-		/* border: 1px solid #011933; */
-		border-radius: 50px;
-		box-shadow: 0 0 10px 1px #919192;
-	}
-
-	form .slide1 span{
-		padding: .5em 1.5em;
-		border-radius: 50px;
-		cursor: pointer;
-		border: .5px solid rgb(255, 255, 255);
-	}
-
-	form .slide1 span:hover{
-		border: .5px solid rgb(1, 25, 51, .3);
-	}
-
-	form .slide1 .buyBttn{
-		color: #ffffff;
-		background-image: linear-gradient(#063b74, #011933);
-	}
-
-	form .slide1 .sellBttn{
-		color: #011933;
-		background-color: white;
-	}
-
-	form .buySect{
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 2em;
-	}
-
-	form .sellSect{
-		display: none;
-		width: 100%;
-		/* display: flex; */
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 2em;
-	}
-
-	form .form01 {
-		width: 90%;
-		display: flex;
-		flex-direction: column;
-		gap: .3em;
-	}
-
-	form .form01 .inp{
-		display: flex;
-		align-items: center;
-		border: 1px solid #011933;
-		padding: .3em 1em .3em 1.4em;
-		border-radius: 50px;
-		gap: .3em;
-		/* background-color: #009BFF; */
-	}
-
-	form .form01 p{
-		padding: 0 1em;
-	}
-
-	form .form01 .inp input{
-		width: 30em;
-		height: 2em;
-		outline: none;
-		border: 0;
-		font-size: 18px;
-		font-weight: 530;
-	}
-
-	form .form01 .inpX{
-		display: flex;
-		justify-content: space-between;
-		font-size: 12px;
-		/* background-color: #009BFF; */
-	}
-
-	form .form01 .inpX p{
-		display: flex;
-		align-items: center;
-		gap: .3em;
-	}
-
-	form .form01 .inpX .hideInpX{
-		visibility: hidden;
-	}
-
-	form .form01 .inpBttn{
-		background-image: linear-gradient(#063b74, #011933);
-		cursor: pointer;
-	}
-
-	form .form01 .inpBttn:hover{
-		background-image: linear-gradient(#063567, #011225);
-	}
-
-	form .form01 .inpBttn input{
-		background-image: linear-gradient(#063b74, #011933);
-		cursor: pointer;
-		color: white;
-	}
-
-	form .form01 .inpBttn input:hover{
-		background-image: linear-gradient(#063567, #011225);
+		text-align: center;
 	}
 	
+	.whyUse .whyUseContent {
+		 display: block; 
+	}
+	
+	.whyUse .whyUseContent .f1x {
+		padding-top: 2em;
+	}	
+	
+	.download .downloadContent {
+		gap: 1em;
+	}
+	.download .downloadContent .dwldCont {
+		display: block; 
+		width: 100%;
+	}
+	
+	.download .downloadContent .dwldCont .R1 {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+		padding: 1em;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.download .downloadContent .dwldCont .L1 img {
+		padding-top: 1em;
+		width: 100%;
+	}
+	
+	.getStarted .getScont {
+		text-align: center;
+	}
+	
+	.getStarted .getScont h1 {
+		font-size: 25px;
+	}
+	
+	.getStarted .getScont .gs01 {
+		font-size: 15px;
+	}
+	
+	.getStarted .getScont .gs02 {
+		font-size: 15px;
+		width: 80%;
+	}
+	
+	.getStarted .getScont a .signBttn02 {
+		padding: .6em 3em;
+	}
 	
 	
 }
