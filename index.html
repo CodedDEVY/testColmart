@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/hompgStyle.css">
     <script src="js/hmpgScript.js" defer></script>
@@ -14,58 +15,27 @@
 </head>
 <body>
     <!-- header section -->
-    <section class="hdr">
-        <div class="logoDiv">
-            <a href=""><img src="img/landingPageLogo.png" alt="homepage" class="logo"></a>
-            <p class="AcctBal">$23,457.50 
-                <span class="percentFig">+2.66<span class="percent">%</span></span>
-            </p>
-        </div>
-        <div class="menu">
-            <div class="menuFeat menuFeatM">
-                <a href="#" class="p2p">P2P</a>
-                <a href="#" class="bam">Become a vendor</a>
-            </div>
-            <div class="menuFeat mPro">
-                <div class="notifyBttn">
-                    <img src="img/notifyW.svg" alt="">
-                </div>
-                <div class="profile">
-                    <img src="img/profileW.svg" alt="">
-                </div>
-                <div class="TMenu">
-                    <img src="img/menu.svg" alt="">
-                </div>
-                <div class="lang">
-                    <img src="img/EN-W.svg" alt="">
-                </div>
-                
-            </div>
-        </div>
-		
-		<!--<div class="menu">
-            <div class="menuFeat menuFeatM">
-                <a href="#" class="p2p">P2P</a>
-                <a href="#" class="bam">Become a vendor</a>
-            </div>
-            <div class="menuFeat mPro">
-                <div class="notifyBttn">
-                    <img src="img/notifyW.svg" alt="">
-                </div>
-                <div class="profile">
-                    <img src="img/profileW.svg" alt="">
-                </div>
-                <div class="TMenu">
-                    <img src="img/menu.svg" alt="">
-                </div>
-                <div class="lang">
-                    <img src="img/EN-W.svg" alt="">
-                </div>
-                
-            </div>
-        </div>-->
-		
-    </section>
+    <header class="header">
+		<div class="navbarLeft">
+			<a href="#" class="logo"><img src="img/landingPageLogo.png" alt="Logo" class="logo"></a>
+			<span class="activePrice">$23,457.50</span> <span class="percentageChange">+2.66%</span>
+		</div>
+        
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+				<a href="#" style="--i:0;" class="p2p">P2P</a>
+                <a href="#" style="--i:1;" class="bam">Become a vendor</a>
+				<a href="#" style="--i:2;" class=""><img src="img/notifyW.svg" alt="Notification" class="logo"></a>
+                <a href="#" style="--i:3;" class=""><img src="img/profileW.svg" alt="Profile" class="logo"></a>
+                <a href="#" style="--i:4;" class=""><img src="img/EN-W.svg" alt="EN" class="logo"></a> 
+        </nav>
+
+    </header>
 
     <section class="bodyCont">
         <div class="light">
@@ -80,8 +50,8 @@
             <p class="ht02">Enjoy P2P excellence with us, from Buying & Selling to Wallet Solutions & Instant Swaps. Explore Effortless Crypto Transactions all around.
             </p>
             <div class="signStst">
-                <a href="#" class="signBttn01">Sign up</a>
-                <a href="">Log in</a>
+                <a href="signup.html" class="signBttn01">Sign up</a>
+                <a href="login.html">Log in</a>
             </div>
         </div>
 
@@ -551,7 +521,7 @@
             <h1>Get Started with COLMART <span>NOW</span></h1>
             <p class="gs01">Choose Colmart today and get the most for your digital currency!</p>
             <p class="gs02 lightFont">Make your cryptocurrency transactions easy and secure with Colmart. Buy, sell, and swap seamlessly.</p>
-            <a href="#"><span class="signBttn02 lightFont">Sign Up</span></a>
+            <a href="signup.html"><span class="signBttn02 lightFont">Sign Up</span></a>
         </div>
      </section>
 

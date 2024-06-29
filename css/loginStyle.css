@@ -55,47 +55,6 @@ body{
     font-size: 14px;
 }
 
-.hdr .menu{
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    /* background-color: yellow; */
-    padding-left: 3em;
-}
-
-.hdr .menu .menuFeat{
-    display: flex;
-    align-items: center;
-    gap: 1.5em;
-}
-
-.hdr .menu .menuFeat a{
-    text-decoration: none;
-    color: black;
-}
-
-.hdr .menu .menuFeat .p2p{
-    background-color: #5799E31F;
-    padding: .3em .6em;
-    border: 1px solid #0F5D8F;
-    border-radius: 50px;
-}
-
-.hdr .menu .menuFeat .p2p:hover{
-    background-color: #19559a1f;
-}
-
-.hdr .menu .menuFeat .bam{
-    background-color: #5799E31F;
-    padding: .3em .6em;
-    /* border: 1px solid #0F5D8F; */
-    border-radius: 50px;
-}
-
-.hdr .menu .menuFeat .bam:hover{
-    background-color: #19559a1f;
-}
-
 /* .hdr .menu .menuFeat img{
     width: 20px;
     cursor: pointer;
@@ -109,7 +68,7 @@ body{
 
 .bdy .sd01{
     width: 30%;
-    min-height: 42em;
+    min-height: 100vh;
     background-color: #011933;
     position: relative;
     overflow: hidden;
@@ -143,7 +102,7 @@ body{
 }
 
 .bdy .sd02 .contr{
-    width: 55%;
+    width: 70%;
     /* background-color: antiquewhite; */
     padding: 2em;
     display: flex;
